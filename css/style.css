@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --main-blue-color: #0078ff;
+}
+
+body{
+    height: 3000px;
+    background-color: #eee;
+}
+
+ #home {
+    background-image: url(/images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+ .header-content h1{
+    font-weight: 600;
+ }
+ .header-content p{
+    font-size: 3rem;
+    text-align: center;
+ }
+.navbar-collapse{
+    flex-grow: unset !important;
+}
+.nav-item a{
+    padding: 0 !important;
+}
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    color: #fff;
+    height: 1.9px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.nav-item a:hover::after{
+    width: 100%;
+}
+
+.main-line-after::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--main-blue-color);
+    color: #fff;
+    height: 4px;
+}
+.icon-services{
+    border: 7px solid var(--main-blue-color);
+    padding: 30px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.icon-services:hover{
+    color: #fff;
+    background-color: var(--main-blue-color);
+    box-shadow: 0 6px 17px #0077ff5b;
+}
+.box-services{
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+}
+.counter-card,.testimonials-card{
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 120px 0;
+}
+.counter-card{
+    background-image: url(/images/counters-bg.jpg);
+}
+.testimonials-card, .contact-card{
+    background-image: url(/images/overlay-bg.jpg);
+}
+.card-shadow{
+    inset: 0;
+    background-color: rgba(0, 119, 255, 0.8);
+}
+.portfolio-card .card img{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.portfolio-card .card img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+.card .category{
+    width: fit-content;
+    margin: auto;
+    top: -20px;
+    right: 0;
+    left: 0;
+}
+.footer{
+    background-color:#0062d3;
+}
